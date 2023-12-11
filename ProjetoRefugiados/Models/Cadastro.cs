@@ -14,10 +14,10 @@ namespace ProjetoRefugiados.Models
         public string Telefone { get; set; }
         public string EstadoCivil { get; set; }
         public Genero Genero  { get; set; }
-        public string Escolaridade { get; set; }
-        public Pais Pais { get; set; }
+        public Escolaridade Escolaridade { get; set; }
+        public Paises Pais { get; set; }
         public CadastroFilho? Filho { get; set; }
-        public Documento Documento { get; set; }
+        public Documento? Documento { get; set; }
 
     }
 }
