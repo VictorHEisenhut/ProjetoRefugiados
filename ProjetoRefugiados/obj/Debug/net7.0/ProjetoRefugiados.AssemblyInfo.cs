@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoRefugiados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b401d0ac8c16d6cf624ee80c47735b7c4b81498")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoRefugiados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoRefugiados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

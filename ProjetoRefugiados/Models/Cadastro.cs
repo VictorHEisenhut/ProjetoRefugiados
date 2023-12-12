@@ -13,7 +13,7 @@ namespace ProjetoRefugiados.Models
         public string Senha { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Telefone { get; set; }
-        public string EstadoCivil { get; set; }
+        public EstadoCivil EstadoCivil { get; set; }
         public Genero Genero  { get; set; }
         public Escolaridade Escolaridade { get; set; }
         public Paises Pais { get; set; }
