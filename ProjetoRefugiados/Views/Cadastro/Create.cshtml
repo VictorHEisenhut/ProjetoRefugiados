@@ -43,18 +43,23 @@
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Pais" class="control-label"></label>
+                <select asp-for="Pais.Id" asp-items="ViewBag.Paises" class="form-control"></select>
+                <span asp-validation-for="Pais" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="EstadoCivil" class="control-label"></label>
-                <select asp-for="EstadoCivil" class="form-control"></select>
+                <select asp-for="EstadoCivil" asp-items="ViewBag.EstadosCivis" class="form-control"></select>
                 <span asp-validation-for="EstadoCivil" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Genero" class="control-label"></label>
-                <select asp-for="Genero" class="form-control"></select>
+                <select asp-for="Genero" asp-items="ViewBag.Generos" class="form-control"></select>
                 <span asp-validation-for="Genero" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Escolaridade" class="control-label"></label>
-                <select asp-for="Escolaridade" class="form-control"></select>
+                <select asp-for="Escolaridade" asp-items="ViewBag.Escolaridades" class="form-control"></select>
                 <span asp-validation-for="Escolaridade" class="text-danger"></span>
             </div>
             <div class="form-group">

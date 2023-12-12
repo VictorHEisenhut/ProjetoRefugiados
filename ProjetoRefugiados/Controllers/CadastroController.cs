@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjetoRefugiados.Data;
 using ProjetoRefugiados.Models;
+using ProjetoRefugiados.Models.Enums;
 
 namespace ProjetoRefugiados.Controllers
 {
@@ -51,15 +52,35 @@ namespace ProjetoRefugiados.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            List<SelectListItem> Generos = new();
+            Generos = Enum.GetValues(typeof(Genero)).Cast<Genero>().Select(c => new SelectListItem() { Text = c.ToString(), Value = c.ToString() }).ToList();
+            ViewBag.Generos = Generos;
+
+            List<SelectListItem> EstadosCivis = new();
+            EstadosCivis = Enum.GetValues(typeof(EstadoCivil)).Cast<EstadoCivil>().Select(c => new SelectListItem() { Text = c.ToString(), Value = c.ToString() }).ToList();
+            ViewBag.EstadosCivis = EstadosCivis;
+
+            List<SelectListItem> Escolaridades = new();
+            Escolaridades = Enum.GetValues(typeof(Escolaridade)).Cast<Escolaridade>().Select(c => new SelectListItem() { Text = c.ToString(), Value = c.ToString() }).ToList();
+            ViewBag.Escolaridades = Escolaridades;
+
+            List<SelectListItem> Paises = new();
+            Paises = _context.Paises.Select(c => new SelectListItem() { Text = c.Pais, Value = c.Id.ToString() }).ToList();
+            ViewBag.Paises = Paises;
+
             return View();
         }
 
         // POST: Cadastro/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Sobrenome,Email,Senha,DataNascimento,Telefone,EstadoCivil,Genero,Escolaridade")] Cadastro cadastro)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Sobrenome,Email,Senha,DataNascimento,Telefone,EstadoCivil,Genero,Escolaridade, Pais")] Cadastro cadastro)
         {
-            if (ModelState.IsValid)
+            cadastro.Pais = _context.Paises.FirstOrDefault(p => p.Id == cadastro.Pais.Id);
+
+            cadastro.Documento = new Documento() { Id = 1, Cpf = "12345678901"};
+            cadastro.Filho = new CadastroFilho() { Id = 1, DataNascimento = DateTime.Now, Escolaridade = Escolaridade.EnsinoFundamentalIncompleto, Genero = Genero.Masculino, Nome = "Jamal", Pais = cadastro.Pais, Sobrenome = "Check" };
+            //if (ModelState.IsValid)
             {
                 _context.Add(cadastro);
                 await _context.SaveChangesAsync();

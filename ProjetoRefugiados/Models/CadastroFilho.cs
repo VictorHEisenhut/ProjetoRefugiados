@@ -12,7 +12,7 @@ namespace ProjetoRefugiados.Models
         public DateTime DataNascimento { get; set; }
         public Genero Genero { get; set; }
         public Paises Pais { get; set; }
-        public string Escolaridade { get; set; }
+        public Escolaridade Escolaridade { get; set; }
 
     }
 }

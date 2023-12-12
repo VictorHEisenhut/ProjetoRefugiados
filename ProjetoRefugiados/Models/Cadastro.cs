@@ -5,6 +5,11 @@ namespace ProjetoRefugiados.Models
 {
     public class Cadastro
     {
+        public Cadastro()
+        {
+            
+        }
+
         [Key]
         public int Id { get; set; }
         public string Nome { get; set; }
