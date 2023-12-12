@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\victor.eisenhut\\.nuget\\packages\\": {}
+    "C:\\Users\\Windows\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+      "projectUniqueName": "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
       "projectName": "ProjetoRefugiados",
-      "projectPath": "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
-      "packagesPath": "C:\\Users\\victor.eisenhut\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
+      "projectPath": "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\victor.eisenhut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

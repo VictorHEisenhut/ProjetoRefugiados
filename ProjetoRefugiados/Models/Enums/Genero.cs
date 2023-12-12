@@ -1,4 +1,4 @@
-﻿namespace ProjetoRefugiados.Models
+﻿namespace ProjetoRefugiados.Models.Enums
 {
     public enum Genero
     {

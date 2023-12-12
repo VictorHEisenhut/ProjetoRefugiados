@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ProjetoRefugiados.Models.Enums;
 
 namespace ProjetoRefugiados.Models
 {
