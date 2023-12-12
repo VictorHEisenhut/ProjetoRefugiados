@@ -78,14 +78,15 @@ namespace ProjetoRefugiados.Controllers
         {
             cadastro.Pais = _context.Paises.FirstOrDefault(p => p.Id == cadastro.Pais.Id);
 
+
             cadastro.Documento = new Documento() { Id = 1, Cpf = "12345678901"};
             cadastro.Filho = new CadastroFilho() { Id = 1, DataNascimento = DateTime.Now, Escolaridade = Escolaridade.EnsinoFundamentalIncompleto, Genero = Genero.Masculino, Nome = "Jamal", Pais = cadastro.Pais, Sobrenome = "Check" };
-            //if (ModelState.IsValid)
-            {
+            /*if (ModelState.IsValid)
+            {*/
                 _context.Add(cadastro);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            //}
             return View(cadastro);
         }
 

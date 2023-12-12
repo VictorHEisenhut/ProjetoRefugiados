@@ -6,6 +6,8 @@ namespace ProjetoRefugiados.Data
     public class AppDbContext : DbContext
     {
         public DbSet<Cadastro> Cadastros { get; set; }
+        public DbSet<Refugiado> Refugiados { get; set; }
+        public DbSet<Filho> Filhos { get; set; }
         public DbSet<Paises> Paises { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Documento> Documentos { get; set; }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {}
+    "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {
+    "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+        "projectUniqueName": "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
         "projectName": "ProjetoRefugiados",
-        "projectPath": "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
-        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
+        "projectPath": "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+        "packagesPath": "C:\\Users\\victor.eisenhut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.eisenhut\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.eisenhut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

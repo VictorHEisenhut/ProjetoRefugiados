@@ -2,9 +2,9 @@
 {
     public enum Genero
     {
-        Masculino,
-        Feminino,
-        NaoBinario,
-        NaoInformado
+        Masculino = 1,
+        Feminino = 2,
+        NaoBinario = 3,
+        NaoInformado = 4
     }
 }
