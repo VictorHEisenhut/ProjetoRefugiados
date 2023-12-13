@@ -1,0 +1,69 @@
+﻿@model ProjetoRefugiados.Models.Documento
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Documento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Cpf" class="control-label"></label>
+                <input asp-for="Cpf" class="form-control" />
+                <span asp-validation-for="Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rg" class="control-label"></label>
+                <input asp-for="Rg" class="form-control" />
+                <span asp-validation-for="Rg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cnh" class="control-label"></label>
+                <input asp-for="Cnh" class="form-control" />
+                <span asp-validation-for="Cnh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistroEmigrante" class="control-label"></label>
+                <input asp-for="RegistroEmigrante" class="form-control" />
+                <span asp-validation-for="RegistroEmigrante" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Crnm" class="control-label"></label>
+                <input asp-for="Crnm" class="form-control" />
+                <span asp-validation-for="Crnm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rne" class="control-label"></label>
+                <input asp-for="Rne" class="form-control" />
+                <span asp-validation-for="Rne" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dprnm" class="control-label"></label>
+                <input asp-for="Dprnm" class="form-control" />
+                <span asp-validation-for="Dprnm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProtocoleRefugio" class="control-label"></label>
+                <input asp-for="ProtocoleRefugio" class="form-control" />
+                <span asp-validation-for="ProtocoleRefugio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
