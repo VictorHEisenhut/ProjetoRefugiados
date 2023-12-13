@@ -17,7 +17,7 @@ namespace ProjetoRefugiados.Data
 
 
         //Criando e usando a connection string
-        static readonly string connectionString = @"Server=localhost;Database=refugiados_db;Uid=root;Pwd=admin";
+        static readonly string connectionString = @"Server=localhost;Database=refugiados_db;Uid=root;Pwd=55677";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));

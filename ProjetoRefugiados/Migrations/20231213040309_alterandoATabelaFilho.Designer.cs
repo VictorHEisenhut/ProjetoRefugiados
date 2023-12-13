@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoRefugiados.Data;
 
@@ -10,9 +11,11 @@ using ProjetoRefugiados.Data;
 namespace ProjetoRefugiados.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231213040309_alterandoATabelaFilho")]
+    partial class alterandoATabelaFilho
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -241,9 +244,6 @@ namespace ProjetoRefugiados.Migrations
                     b.Property<int>("PaisId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ParenteId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Sobrenome")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -251,8 +251,6 @@ namespace ProjetoRefugiados.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("PaisId");
-
-                    b.HasIndex("ParenteId");
 
                     b.ToTable("Filhos");
                 });
@@ -403,15 +401,7 @@ namespace ProjetoRefugiados.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ProjetoRefugiados.Models.Refugiado", "Parente")
-                        .WithMany()
-                        .HasForeignKey("ParenteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Pais");
-
-                    b.Navigation("Parente");
                 });
 
             modelBuilder.Entity("ProjetoRefugiados.Models.PostoDeSaude", b =>
