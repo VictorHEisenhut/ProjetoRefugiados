@@ -11626,19 +11626,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Willikit\\.nuget\\packages\\": {}
+    "C:\\Users\\lucas.loterio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Willikit\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
       "projectName": "ProjetoRefugiados",
-      "projectPath": "C:\\Users\\Willikit\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
-      "packagesPath": "C:\\Users\\Willikit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Willikit\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
+      "projectPath": "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+      "packagesPath": "C:\\Users\\lucas.loterio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Willikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucas.loterio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11712,7 +11712,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
