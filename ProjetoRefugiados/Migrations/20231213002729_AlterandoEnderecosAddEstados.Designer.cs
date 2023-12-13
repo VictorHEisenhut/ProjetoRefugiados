@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoRefugiados.Data;
 
@@ -10,9 +11,11 @@ using ProjetoRefugiados.Data;
 namespace ProjetoRefugiados.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231213002729_AlterandoEnderecosAddEstados")]
+    partial class AlterandoEnderecosAddEstados
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,6 +36,97 @@ namespace ProjetoRefugiados.Migrations
                     b.HasIndex("EnderecoId");
 
                     b.ToTable("Abrigos");
+                });
+
+            modelBuilder.Entity("ProjetoRefugiados.Models.Cadastro", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int?>("DocumentoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Escolaridade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EstadoCivil")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("FilhoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Genero")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PaisId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Telefone")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DocumentoId");
+
+                    b.HasIndex("FilhoId");
+
+                    b.HasIndex("PaisId");
+
+                    b.ToTable("Cadastros");
+                });
+
+            modelBuilder.Entity("ProjetoRefugiados.Models.CadastroFilho", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Escolaridade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Genero")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PaisId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PaisId");
+
+                    b.ToTable("CadastroFilho");
                 });
 
             modelBuilder.Entity("ProjetoRefugiados.Models.Consulado", b =>
@@ -268,6 +362,40 @@ namespace ProjetoRefugiados.Migrations
                         .IsRequired();
 
                     b.Navigation("Endereco");
+                });
+
+            modelBuilder.Entity("ProjetoRefugiados.Models.Cadastro", b =>
+                {
+                    b.HasOne("ProjetoRefugiados.Models.Documento", "Documento")
+                        .WithMany()
+                        .HasForeignKey("DocumentoId");
+
+                    b.HasOne("ProjetoRefugiados.Models.CadastroFilho", "Filho")
+                        .WithMany()
+                        .HasForeignKey("FilhoId");
+
+                    b.HasOne("ProjetoRefugiados.Models.Paises", "Pais")
+                        .WithMany()
+                        .HasForeignKey("PaisId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Documento");
+
+                    b.Navigation("Filho");
+
+                    b.Navigation("Pais");
+                });
+
+            modelBuilder.Entity("ProjetoRefugiados.Models.CadastroFilho", b =>
+                {
+                    b.HasOne("ProjetoRefugiados.Models.Paises", "Pais")
+                        .WithMany()
+                        .HasForeignKey("PaisId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pais");
                 });
 
             modelBuilder.Entity("ProjetoRefugiados.Models.Consulado", b =>

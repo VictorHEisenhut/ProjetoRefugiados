@@ -15,5 +15,7 @@ namespace ProjetoRefugiados.Models
         public Genero Genero { get; set; }
         public Escolaridade Escolaridade { get; set; }
         public Paises Pais { get; set; }
+        public Refugiado Parente { get; set; }
+        
     }
 }
