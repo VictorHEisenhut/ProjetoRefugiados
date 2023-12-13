@@ -18,5 +18,7 @@ namespace ProjetoRefugiados.Models
         public Escolaridade Escolaridade { get; set; }
         public Paises Pais { get; set; }
         public int PaisId { get; set; }
+        public Documento? Documento { get; set; }
+        public int DocumentoId { get; set; }
     }
 }

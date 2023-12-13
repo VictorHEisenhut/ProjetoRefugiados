@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {}
+    "C:\\Users\\victor.eisenhut\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {
+    "C:\\Users\\victor.eisenhut\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+        "projectUniqueName": "C:\\Users\\victor.eisenhut\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
         "projectName": "ProjetoRefugiados",
-        "projectPath": "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
-        "packagesPath": "C:\\Users\\lucas.loterio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.loterio\\Documents\\Projeto\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
+        "projectPath": "C:\\Users\\victor.eisenhut\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\ProjetoRefugiados.csproj",
+        "packagesPath": "C:\\Users\\victor.eisenhut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.eisenhut\\Desktop\\ProjetoRefugiados\\ProjetoRefugiados\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lucas.loterio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.eisenhut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

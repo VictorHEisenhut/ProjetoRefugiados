@@ -9,97 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjetoRefugiados
 build_property.RootNamespace = ProjetoRefugiados
-build_property.ProjectDir = C:\Users\lucas.loterio\Documents\Projeto\ProjetoRefugiados\ProjetoRefugiados\
+build_property.ProjectDir = C:\Users\victor.eisenhut\Desktop\ProjetoRefugiados\ProjetoRefugiados\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lucas.loterio\Documents\Projeto\ProjetoRefugiados\ProjetoRefugiados
+build_property.MSBuildProjectDirectory = C:\Users\victor.eisenhut\Desktop\ProjetoRefugiados\ProjetoRefugiados
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Create.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Delete.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Details.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Edit.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Index.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Cadastro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Create.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Documento/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Documento/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Documento/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Documento/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Documento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Delete.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Details.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Edit.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Index.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Filhos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsaG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Home/Index.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Home/Privacy.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Create.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Delete.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Details.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Edit.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Index.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Refugiado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmdWdpYWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Shared/Error.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/_ViewImports.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/_ViewStart.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas.loterio/Documents/Projeto/ProjetoRefugiados/ProjetoRefugiados/Views/Shared/_Layout.cshtml]
+[C:/Users/victor.eisenhut/Desktop/ProjetoRefugiados/ProjetoRefugiados/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qdrzrmufrz

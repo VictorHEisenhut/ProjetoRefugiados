@@ -1956,14 +1956,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Diagnostics.DiagnosticSource/7.0.2": {
-        "runtime": {
-          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.423.11508"
-          }
-        }
-      },
+      "System.Diagnostics.DiagnosticSource/7.0.2": {},
       "System.Diagnostics.Tools/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",

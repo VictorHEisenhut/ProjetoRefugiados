@@ -29,6 +29,7 @@ namespace ProjetoRefugiados.Controllers
             foreach (var refugiado in refugiados)
             {
                 refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == refugiado.PaisId);
+                refugiado.Documento = _context.Documentos.FirstOrDefault(d => d.Id == refugiado.DocumentoId);
             }
               
 
@@ -52,6 +53,7 @@ namespace ProjetoRefugiados.Controllers
                 return NotFound();
             }
             refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == refugiado.PaisId);
+            refugiado.Documento = _context.Documentos.FirstOrDefault(d => d.Id == refugiado.DocumentoId);
 
             return View(refugiado);
         }
@@ -87,12 +89,13 @@ namespace ProjetoRefugiados.Controllers
         {
             refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == refugiado.Pais.Id);
             refugiado.PaisId = refugiado.Pais.Id;
+            refugiado.Documento = new Documento();
 
            // if (ModelState.IsValid)
             {
                 _context.Add(refugiado);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Create", "Documento", new {id = refugiado.Id});
             }
             return View(refugiado);
         }
