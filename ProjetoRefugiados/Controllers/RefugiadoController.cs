@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -29,10 +30,11 @@ namespace ProjetoRefugiados.Controllers
             foreach (var refugiado in refugiados)
             {
                 refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == refugiado.PaisId);
+                refugiado.Documento = _context.Documentos.FirstOrDefault(d => d.Id == refugiado.DocumentoId);
             }
-              
 
-              return _context.Refugiados != null ? 
+
+            return _context.Refugiados != null ? 
                           View(await _context.Refugiados.ToListAsync()) :
                           Problem("Entity set 'AppDbContext.Refugiados'  is null.");
         }
@@ -52,6 +54,7 @@ namespace ProjetoRefugiados.Controllers
                 return NotFound();
             }
             refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == refugiado.PaisId);
+            refugiado.Documento = _context.Documentos.FirstOrDefault(d => d.Id == refugiado.DocumentoId);
 
             return View(refugiado);
         }
@@ -87,12 +90,13 @@ namespace ProjetoRefugiados.Controllers
         {
             refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == refugiado.Pais.Id);
             refugiado.PaisId = refugiado.Pais.Id;
+            refugiado.Documento = new Documento();
 
            // if (ModelState.IsValid)
             {
                 _context.Add(refugiado);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Create", "Documento", new {id = refugiado.Id});
             }
             return View(refugiado);
         }
@@ -126,7 +130,10 @@ namespace ProjetoRefugiados.Controllers
             {
                 return NotFound();
             }
+            
+            
 
+            /*carregar documento e pais*/
             return View(refugiado);
         }
 
@@ -135,17 +142,27 @@ namespace ProjetoRefugiados.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Sobrenome,Email,Senha,DataNascimento,Telefone,EstadoCivil,Genero,Escolaridade")] Refugiado refugiado)
+        public async Task<IActionResult> Edit(int id,  Refugiado refugiado)
         {
             if (id != refugiado.Id)
             {
                 return NotFound();
-            }
+            }           
 
             //if (ModelState.IsValid)
             {
                 try
                 {
+                  //  var aux = _context.Refugiados.FirstOrDefault(r => r.Id == refugiado.Id);
+                  ///*  refugiado.Pais = _context.Paises.FirstOrDefault(p => p.Id == aux.PaisId);
+                  //  refugiado.PaisId = refugiado.Pais.Id;
+                  //  refugiado.Documento = _context.Documentos.FirstOrDefault(d => d.Id == aux.DocumentoId);
+                  //  refugiado.DocumentoId = refugiado.Documento.Id;*/
+                  ////aux.Pais  = _context.Paises.FirstOrDefault(p => p.Id == aux.PaisId)
+                  //  //aux.PaisId = refugiado.PaisId;
+                  //  aux.Documento = _context.Documentos.FirstOrDefault(d => d.Id == refugiado.DocumentoId);
+                  //  aux.DocumentoId = refugiado.Documento.Id;
+
                     _context.Update(refugiado);
                     await _context.SaveChangesAsync();
                 }
